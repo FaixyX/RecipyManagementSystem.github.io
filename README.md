@@ -18,18 +18,8 @@ V. Place your CSS files (e.g., style.css) inside the css folder.
 VI. Place your JavaScript files (e.g., edit_script.js, script.js) inside the js folder.
 (Folder names: project, templates, static, images, css, js)
 File names: app.py, index.html, edit_script.js, edit_recipe.html, script.js, and style.css)
-project/
-├── app.py
-├── templates/
-│   └── index.html
-│   └── edit_recipe.html
-└── static/
-    ├── images/
-    ├── css/
-    │   └── style.css
-    └── js/
-        └── script.js
-        └── edit_script.js
+![image](https://github.com/FaixyX/RecipyManagementSystem.github.io/assets/57293276/ec6011a7-1709-4016-8304-ffad77775066)
+
 7: Ensuring the Python, MYSQL and Database setup is complete. Run the Python file with the command "flask run" on your terminal.
 
 I have used the following:
