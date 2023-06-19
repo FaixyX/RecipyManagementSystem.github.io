@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Edit Recipe</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <h1>Edit Recipe</h1>
+
+  <form id="edit-recipe-form">
+    <label for="title">Title:</label>
+    <input type="text" id="title" name="title" required value="{{ recipe[1] }}">
+
+    <label for="ingredients">Ingredients:</label>
+    <textarea id="ingredients" name="ingredients" required>{{ recipe[2] }}</textarea>
+
+    <label for="instructions">Instructions:</label>
+    <textarea id="instructions" name="instructions" required>{{ recipe[3] }}</textarea>
+
+    <label for="image">Image:</label>
+    <input type="file" id="image" name="image" accept="image/*">
+    <div id="image-preview">
+      <img src="static/images/{{ recipe[4] }}" alt="Preview" id="preview-image">
+    </div>
+
+    <button type="submit">Save Changes</button>
+  </form>
+
+  <script src="{{ url_for('static', filename='js/edit_script.js') }}"></script>
+
+</body>
+</html>
